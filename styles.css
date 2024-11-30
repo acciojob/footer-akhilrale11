@@ -1,1 +1,88 @@
-/* your code here */
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+}
+
+/* Footer content container */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Footer section styling */
+.footer-section {
+    flex: 1 1 200px;
+    max-width: 250px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ff9900;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff9900;
+}
+
+/* Social Media section */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.media-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.media-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .social-media {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
